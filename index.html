@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <title>Life360 | Edgemarketing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/life360-small.webp" alt="Life360 Logo" class="logo-img">
+                <span class="logo-text">Life360</span>
+            </div>
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 class="hero-title">Conectando lo que importa</h1>
+            <p class="hero-subtitle">Life360 para tu familia y tu negocio</p>
+            <a href="#contacto" class="btn btn-gold">Contactar ahora</a>
+        </div>
+        <picture class="hero-image">
+            <source srcset="assets/images/sin_titulo-small.webp" media="(max-width: 600px)">
+            <source srcset="assets/images/sin_titulo-medium.webp" media="(max-width: 1024px)">
+            <img src="assets/images/sin_titulo-large.webp" alt="Life360 hero" loading="lazy">
+        </picture>
+    </section>
+
+    <section class="features" id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros servicios</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Ubicación en tiempo real</h3>
+                    <p>Sabe dónde están tus seres queridos en cada momento.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Alertas de seguridad</h3>
+                    <p>Notificaciones inmediatas ante cualquier evento.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Optimizado para móvil</h3>
+                    <p>Interfaz ligera y rápida en cualquier dispositivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <h2 class="section-title">Galería</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="assets/images/life360-small.webp" media="(max-width: 600px)">
+                        <source srcset="assets/images/life360-medium.webp" media="(max-width: 1024px)">
+                        <img src="assets/images/life360-large.webp" alt="Life360 logo" loading="lazy">
+                    </picture>
+                </div>
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="assets/images/sin_titulo-small.webp" media="(max-width: 600px)">
+                        <source srcset="assets/images/sin_titulo-medium.webp" media="(max-width: 1024px)">
+                        <img src="assets/images/sin_titulo-large.webp" alt="Life360 banner" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Cuéntanos tu proyecto"></textarea>
+                </div>
+                <button type="submit" class="btn btn-gold btn-full">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Edgemarketing - Life360. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
